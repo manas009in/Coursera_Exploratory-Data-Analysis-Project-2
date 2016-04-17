@@ -11,8 +11,10 @@ totalpm25 <- with(NEI, tapply(Emissions, year, sum, na.rm = TRUE))
 #Convert the logical vector into a dataframe with 2 Columns
 df <- data.frame(year = names(totalpm25), totalpm = totalpm25)
 
-#Plot the Barplot
+#Plot the bargraph with Year as X-Axis and Total Emissions of PM2.5 as Y-Axis
 par(mfrow = c(1,1), mar = c(4,4,2,1))
 with(df, barplot(height = totalpm, names.arg = year, xlab = "Year", ylab = "Total PM2.5 Emissions", main = "Total PM2.5 Emissions for the Years 1999 to 2008"))
+
+#Copy the graph in a png file and shut off the device
 dev.copy(png, file = "plot1.png", height = 480, width=480)
 dev.off()
