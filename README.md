@@ -1,7 +1,7 @@
 Exploratory Data Analysis Project
 ========================================================
-Submitted by: Maanas Mutreja
-#Assignment 2
+##Submitted by: Maanas Mutreja
+##Project 2
 
 Introduction
 -------------
